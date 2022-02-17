@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Mvc;
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search</h1>
+    <form method="Get" asp-controller="Search" role="form">
+        <input type="text" name="SearchTerm" />
+        <input type="submit" />
+    </form>
+</div>

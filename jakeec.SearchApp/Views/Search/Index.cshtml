@@ -1,0 +1,13 @@
+@model jakeec.SearchApp.Models.SearchResultModel
+
+<div>
+    @foreach (var searchResult in Model.Results)
+    {
+        <a href="@searchResult.Link">
+            <div class="border mt-2 p-4">
+                <h3>@searchResult.Headline</h1>
+                <p class="font-small">@searchResult.ShortDescription</p>
+            </div>
+        </a>
+    }
+</div>
